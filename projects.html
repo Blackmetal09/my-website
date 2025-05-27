@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects - Your Name</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script type="module">
+        import * as CANNON_ES_MODULE from 'https://unpkg.com/cannon-es@0.19.0/dist/cannon-es.js';
+        window.CANNON = CANNON_ES_MODULE;
+    </script>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons (Optional) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <div class="container header-container">
+            <a href="index.html" class="logo">PORTFOLIO</a>
+            <nav>
+                <button class="icon-btn" aria-label="Toggle Dark Mode">
+                    <span class="icon-minus">–</span>
+                </button>
+                <button class="resume-btn">
+                    <span class="btn-text">RESUME</span>
+                    <span class="btn-arrow">➔</span>
+                </button>
+                <button class="menu-toggle-btn" id="menuToggleBtn" aria-expanded="false" aria-controls="dropdownMenu">
+                    <span class="btn-text">MENU</span>
+                    <span class="menu-dots-container">
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </span>
+                </button>
+                <!-- DROPDOWN MENU INSIDE NAV -->
+                <div class="dropdown-menu" id="dropdownMenu" aria-hidden="true">
+                    <div class="dropdown-menu-card main-links-card">
+                        <ul>
+                            <li><a href="index.html" class="menu-link"><span>HOME</span> <span class="link-indicator">•</span></a></li>
+                            <li><a href="about.html" class="menu-link"><span>ABOUT US</span> <span class="link-indicator">•</span></a></li>
+                            <li><a href="projects.html" class="menu-link active"><span>PROJECTS</span> <span class="link-indicator">•</span></a></li>
+                            <li><a href="contact.html" class="menu-link"><span>CONTACT</span> <span class="link-indicator">•</span></a></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown-menu-card playground-card">
+                        <a href="#" class="menu-link">
+                            <i class="fas fa-flask playground-icon"></i>
+                            <span>PLAYGROUND</span>
+                            <span class="external-link-icon">↗</span>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="all-projects-page">
+        <section class="projects-listing-hero">
+            <div class="container">
+                <div class="section-header">
+                    <h1>PROJECTS ↘</h1>
+                    <p class="section-description"></p>
+                </div>
+            </div>
+        </section>
+
+        <section class="projects-grid-section">
+            <div class="container">
+                <div class="work-grid">
+                    <!-- Project 1: Within -->
+                    <a href="projects/within.html" class="work-item">
+                        <div class="work-item-image-wrapper">
+                            <img src="images/within-cover.svg" alt="Within Project Thumbnail">
+                        </div>
+                        <span>GAME DESIGN • UX</span>
+                        <div class="work-item-text">
+                            <span class="work-item-arrow">➔</span>
+                            <h3>Within</h3>
+                        </div>  
+                    </a>
+                    <!-- Project 2: UX Design internship at Microsoft -->
+                    <a href="projects/microsoft-internship.html" class="work-item">
+                        <div class="work-item-image-wrapper">
+                            <img src="images/microsoft-internship-cover.svg" alt="Microsoft Internship Thumbnail">
+                        </div>
+                        <span>UI/UX • INTERNSHIP</span>
+                        <div class="work-item-text">
+                            <span class="work-item-arrow">➔</span>
+                            <h3>UX Design Internship</h3>
+                        </div>
+                    </a>
+                    <!-- Project 3: Routech -->
+                    <a href="projects/routech.html" class="work-item">
+                        <div class="work-item-image-wrapper">
+                            <img src="images/routech-cover.svg" alt="Routech Project Thumbnail">
+                        </div>
+                        <span>UI/UX • WEB DESIGN</span>
+                        <div class="work-item-text">
+                            <span class="work-item-arrow">➔</span>
+                            <h3>Routech</h3>
+                        </div>   
+                    </a>
+                    <!-- Project 4: Flood Escape -->
+                    <a href="projects/flood-escape.html" class="work-item">
+                        <div class="work-item-image-wrapper">
+                            <img src="images/flood-escape-cover.svg" alt="Flood Escape Thumbnail">
+                        </div>
+                        <span>GAME DESIGN • EDUCATIONAL</span>
+                        <div class="work-item-text">
+                            <span class="work-item-arrow">➔</span>
+                            <h3>Flood Escape</h3>
+                        </div> 
+                    </a>
+                    <!-- Project 5: Palette -->
+                    <a href="projects/palette.html" class="work-item">
+                        <div class="work-item-image-wrapper">
+                            <img src="images/palette-vr-cover.svg" alt="Palette Project Thumbnail">
+                        </div>
+                        <span>VR • UI/UX</span>
+                        <div class="work-item-text">
+                            <span class="work-item-arrow">➔</span>
+                            <h3>Palette</h3>
+                        </div>
+                    </a>
+                    <!-- Project 6: AlphaQuest -->
+                    <a href="projects/alphaquest.html" class="work-item">
+                        <div class="work-item-image-wrapper">
+                            <img src="images/alphaquest-cover.svg" alt="AlphaQuest Thumbnail">
+                        </div>
+                        <span>UI/UX • WEB DESIGN</span>
+                        <div class="work-item-text">
+                            <span class="work-item-arrow">➔</span>
+                            <h3>AlphaQuest</h3>
+                        </div>
+                    </a>
+                    <!-- Project 7: Life at Coliseum -->
+                    <a href="projects/life-at-coliseum.html" class="work-item">
+                        <div class="work-item-image-wrapper">
+                            <img src="images/coliseum-cover.svg" alt="Life at Coliseum Thumbnail">
+                        </div>
+                        <span>GENAI • SHORT FILM</span>
+                        <div class="work-item-text">
+                            <span class="work-item-arrow">➔</span>
+                            <h3>Life at Coliseum</h3>
+                        </div>
+                    </a>
+                    <!-- Project 8: LITL -->
+                    <a href="projects/litl.html" class="work-item">
+                        <div class="work-item-image-wrapper">
+                            <img src="images/litl-branding-cover.svg" alt="LITL Thumbnail">
+                        </div>
+                        <span>BRANDING • WEB DESIGN</span>
+                        <div class="work-item-text">
+                            <span class="work-item-arrow">➔</span>
+                            <h3>LITL</h3>
+                        </div>
+                    </a>
+                    <!-- Project 9: Kindnest -->
+                    <a href="projects/kindnest.html" class="work-item">
+                        <div class="work-item-image-wrapper">
+                            <img src="images/kindnest-cover.svg" alt="Kindnest Thumbnail">
+                        </div>
+                        <span>SERVICE DESIGN • UX</span>
+                        <div class="work-item-text">
+                            <span class="work-item-arrow">➔</span>
+                            <h3>Kindnest</h3>
+                        </div>
+                    </a>
+                    <!-- Project 10: Align EdTech -->
+                    <a href="projects/align-edtech.html" class="work-item">
+                        <div class="work-item-image-wrapper">
+                            <img src="images/align-cover.svg" alt="Align EdTech Thumbnail">
+                        </div>
+                        
+                        <div class="work-item-text">
+                            <span class="work-item-arrow">➔</span>
+                            <h3>Align EdTech</h3>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <h3>Let's create something amazing together.</h3>
+                    <a href="contact.html" class="footer-contact-btn round-btn">GET IN TOUCH</a>
+                </div>
+                <div class="footer-right">
+                    <p>Socials:</p>
+                    <ul>
+                        <li><a href="#">LinkedIn</a></li> {/* Add your actual LinkedIn URL */}
+                        <li><a href="#">Behance</a></li>  {/* Add your actual Behance URL */}
+                        <li><a href="#">Dribbble</a></li> {/* Add your actual Dribbble URL */}
+                    </ul>
+                </div>
+            </div>
+            <p class="copyright">© <span id="year"></span> Your Name. All rights reserved.</p> {/* Change "Your Name" */}
+        </div>
+    </footer>
+
+    <script type="module" src="js/script.js"></script>
+</body>
+</html>

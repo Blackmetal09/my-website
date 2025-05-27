@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project: Within - Your Name</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script type="module">
+        import * as CANNON_ES_MODULE from 'https://unpkg.com/cannon-es@0.19.0/dist/cannon-es.js';
+        window.CANNON = CANNON_ES_MODULE;
+    </script>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="project-detail-page-horizontal">
+    <header>
+        <div class="container header-container">
+            <a href="../index.html" class="logo">PORTFOLIO</a>
+            <nav>
+                <a href="../projects.html" class="header-back-btn round-btn nav-item" id="headerBackBtn">BACK  ↖</a>
+                <button class="icon-btn nav-item" aria-label="Toggle Dark Mode">
+                    <span class="icon-minus">–</span>
+                </button>
+                <button class="resume-btn nav-item">
+                    <span class="btn-text">RESUME</span>
+                    <span class="btn-arrow">➔</span>
+                </button>
+                <button class="menu-toggle-btn nav-item" id="menuToggleBtn" aria-expanded="false" aria-controls="dropdownMenu">
+                    <span class="btn-text">MENU</span>
+                    <span class="menu-dots-container">
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </span>
+                </button>
+                <div class="dropdown-menu" id="dropdownMenu" aria-hidden="true">
+                    <div class="dropdown-menu-card main-links-card">
+                        <ul>
+                            <li><a href="../index.html" class="menu-link"><span>HOME</span> <span class="link-indicator">•</span></a></li>
+                            <li><a href="../about.html" class="menu-link"><span>ABOUT US</span> <span class="link-indicator">•</span></a></li>
+                            <li><a href="../projects.html" class="menu-link active"><span>PROJECTS</span> <span class="link-indicator">•</span></a></li>
+                            <li><a href="../contact.html" class="menu-link"><span>CONTACT</span> <span class="link-indicator">•</span></a></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown-menu-card playground-card">
+                        <a href="#" class="menu-link">
+                            <i class="fas fa-flask playground-icon"></i>
+                            <span>PLAYGROUND</span>
+                            <span class="external-link-icon">↗</span>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="project-detail-horizontal-container" id="projectDetailContainer">
+        <section class="project-slide project-intro-split-slide">
+            <div class="project-intro-left-panel">
+                <div class="container">
+                    <h1>ROUTECH</h1>
+                    <p class="project-summary">Representing internal conflict in substance addiction via reactive game mechanics, aiming to foster empathy and understanding through interactive storytelling.</p>
+                    <div class="services-list">
+                        <h4>SERVICES</h4>
+                        <ul>
+                            <li>Concept Development</li>
+                            <li>Game Design</li>
+                            <li>UX Design</li>
+                            <li>Prototyping</li>
+                        </ul>
+                    </div>
+                    <a href="#" class="launch-project-btn round-btn" target="_blank" rel="noopener noreferrer">
+                        <span class="btn-dot"></span> LAUNCH PROJECT
+                    </a>
+                </div>
+            </div>
+            <div class="project-intro-hero-visual">
+                <img src="../images/within/image 02.png" alt="Main hero visual for Within project">
+            </div>
+        </section>
+
+        <section class="project-slide image-slide">
+            <img src="../images/within/1.png" alt="Moodboard and early concepts for Within">
+        </section>
+
+        <section class="project-slide image-slide">
+            <img src="../images/within/2.png" alt="Moodboard and early concepts for Within">
+        </section>
+
+        <section class="project-slide image-slide">
+            <img src="../images/within/3.png" alt="Moodboard and early concepts for Within">
+        </section>
+
+        <section class="project-slide image-slide">
+            <img src="../images/within/4.png" alt="Moodboard and early concepts for Within">
+        </section>
+
+        <section class="project-slide image-slide">
+            <img src="../images/within/5.png" alt="Moodboard and early concepts for Within">
+        </section>
+
+        <section class="project-slide image-slide">
+            <img src="../images/within/6.png" alt="Moodboard and early concepts for Within">
+        </section>
+
+        <section class="project-slide text-content-slide">
+            <div class="container"> {/* Container for text formatting */}
+                <h2>The Core Idea</h2>
+                <p>The "Within" project aimed to create an experiential game that delves into the complexities of internal conflict, particularly through the lens of addiction. Instead of a direct narrative, the game uses reactive environments and abstract mechanics to convey feelings of struggle, temptation, and the arduous path to self-awareness.</p>
+            </div>
+        </section>
+
+        <section class="project-slide image-slide">
+            <img src="../images/projects/within/within-gameplay-mockup1.jpg" alt="Gameplay mockup showing a dark, constricting environment">
+        </section>
+
+        <section class="project-slide image-slide">
+            <img src="../images/projects/within/within-gameplay-mockup2.jpg" alt="Gameplay mockup showing a moment of clarity or hope">
+        </section>
+
+        <section class="project-slide video-slide">
+            <video controls width="100%" poster="../images/projects/within/within-video-poster.jpg">
+                <source src="../images/projects/within/within-demo.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </section>
+        
+        <section class="project-slide text-content-slide">
+            <div class="container">
+                <h2>Reactive Mechanics</h2>
+                <p>Player choices and in-game "states" directly influence the world. For example, succumbing to a negative impulse might cause the environment to become more distorted or oppressive, while moments of resistance could lead to clarity and more open spaces. This feedback loop is central to the player's empathetic journey.</p>
+            </div>
+        </section>
+
+        <section class="project-slide image-slide">
+            <img src="../images/projects/within/within-ux-flow.jpg" alt="User experience flow or key interaction diagram for Within">
+        </section>
+
+        <section class="project-slide next-project-card-slide">
+             <a href="microsoft-internship.html"> {/* MAKE SURE THIS LINKS TO YOUR ACTUAL NEXT PROJECT HTML FILE */}
+                <span>NEXT PROJECT</span>
+                <h2>UX Design Internship at Microsoft</h2> {/* Title of next project */}
+                <span class="arrow-indicator">→</span>
+            </a>
+        </section>
+    </main>
+
+    <script type="module" src="../js/script.js"></script>
+</body>
+</html>
